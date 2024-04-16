@@ -1,0 +1,31 @@
+/* Imports Import */
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,600;1,9..144,600&family=Manrope&display=swap');
+@import 'variables';
+@import 'mixins';
+
+/* CSS RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  width: 100%;
+}
+
+/* PROJECT START / GLOBAL CONFIG */
+body {
+  min-height: 100vh;
+}
+
