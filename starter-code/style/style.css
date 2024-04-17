@@ -18,10 +18,49 @@ ol, ul {
 
 img, picture, video, canvas, svg {
   display: block;
-  width: 100%;
+  max-width: 100%;
 }
 
 /* PROJECT START / GLOBAL CONFIG */
 body {
   min-height: 100vh;
+}
+
+.header-bg {
+  background: #24053E;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 343px;
+  padding-top: 32px;
+  margin: 0 auto;
+}
+@media (min-width: 700px) {
+  .header {
+    max-width: 689px;
+  }
+}
+@media (min-width: 1200px) {
+  .header {
+    max-width: 1110px;
+    padding-top: 56px;
+  }
+}
+
+.cta {
+  display: inline-block;
+  color: #FFFFFF;
+  font-family: "Manrope", sans-serif;
+  font-weight: 600;
+  line-height: 2;
+}
+.cta:after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 3px;
+  background: #44FFA1;
 }/*# sourceMappingURL=style.css.map */

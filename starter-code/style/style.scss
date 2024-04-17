@@ -21,7 +21,7 @@ ol, ul {
 
 img, picture, video, canvas, svg {
   display: block;
-  width: 100%;
+  max-width: 100%;
 }
 
 /* PROJECT START / GLOBAL CONFIG */
@@ -29,3 +29,42 @@ body {
   min-height: 100vh;
 }
 
+.header-bg {
+  background: $primary-color;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 343px;
+  padding-top: 32px;
+  margin: 0 auto;
+  @include device(tablet) {
+    max-width: 689px;
+    
+  }
+  @include device(desktop) {
+    max-width: 1110px;
+    padding-top: 56px;
+  }
+}
+
+.cta {
+  display: inline-block;
+  color: $neutral-color-1;
+  font-family: $font-2;
+  font-weight: 600;
+  line-height: 2;
+  &:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+    background: $secondary-color;
+  }
+}
+
+.intro {
+
+}
