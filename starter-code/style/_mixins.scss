@@ -2,14 +2,14 @@
 @mixin heading-typography($size) {
   font-family: "Fraunces", serif;
   font-weight: 600;
-
+  font-size: 50px;
   @if $size == large {
-    font-size: 5rem;
+    font-size: 80px;
   } @else if $size == medium {
-    font-size: 3.5rem;
+    font-size: 60px;
     line-height: 1.142;
   } @else if $size == small {
-    font-size: 2rem;
+    font-size: 32px;
     line-height: 1.25;
   }
 }

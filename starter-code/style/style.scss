@@ -29,6 +29,8 @@ body {
   min-height: 100vh;
 }
 
+// HEADER CODE
+
 .header-bg {
   background: $primary-color;
 }
@@ -42,7 +44,6 @@ body {
   margin: 0 auto;
   @include device(tablet) {
     max-width: 689px;
-    
   }
   @include device(desktop) {
     max-width: 1110px;
@@ -50,7 +51,7 @@ body {
   }
 }
 
-.cta {
+.header .cta {
   display: inline-block;
   color: $neutral-color-1;
   font-family: $font-2;
@@ -65,6 +66,207 @@ body {
   }
 }
 
-.intro {
+// INTRO (FIRST SECTION) CODE
 
+.intro {
+  background-color: $primary-color;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  padding: 64px 16px 126px 16px;
+  @include device(tablet) {
+    padding: 64px 16px 138px 16px;
+  }
+}
+
+.intro__title {
+  font-size: 50px;
+  font-family: $font-1;
+  color: $neutral-color-1;
+  text-align: center;
+  margin-bottom: 40px;
+  @include device(tablet) {
+    @include heading-typography(medium);
+    max-width: 500px;
+  }
+}
+
+.intro__cta {
+  display: inline-block;
+  color: $primary-color;
+  background-color: $secondary-color;
+  font-family: $font-2;
+  line-height: 2;
+  font-weight: 600;
+  padding: 12px 24px;
+}
+
+.intro__img {
+  max-width: 320px;
+  position: absolute;
+  bottom: -110px;
+  z-index: 1;
+  @include device(tablet) {
+    max-width: 514px;
+    bottom: -211px;
+  }
+}
+
+.curve {
+ border: none;
+ width: 100%;
+ aspect-ratio: 20/1;
+ clip-path: ellipse(55% 100% at top);
+ position: absolute;
+}
+
+.top {
+  background-color: $primary-color;
+}
+
+// FEATURES LIST (SECOND SECTION) CODE
+
+
+.list-bg {
+  background-color: $neutral-color-2;
+}
+
+.container__list {
+  padding-top: 155px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  max-width: 343px;
+  margin: 0 auto; 
+  gap: 40px;
+  @include device(tablet) {
+    padding-top: 241px;
+    max-width: 573px;
+  }
+  @include device(desktop) {
+    padding-top: 255px;
+    max-width: 1114px;
+  }
+}
+
+.list__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @include device(tablet) {
+   flex-direction: row;
+   gap: 32px;
+  }
+  @include device(desktop) {
+   
+  }
+    span {
+    line-height: 1.8;
+    border: 1px solid $tertiary-color;
+    border-radius: 50%;
+    padding: 4px;
+    font-family: $font-1;
+    font-size: 20px;
+    min-width: 3rem; 
+    margin-bottom: 24px;
+    @include device(tablet) {
+      margin: initial;
+    }
+    }
+}
+
+.list__content {
+  @include device(tablet) {
+    text-align: left;
+  }
+}
+
+
+.list__title {
+  font-family: $font-1;
+  font-size: 28px;
+  line-height: 1.285;
+  color: $primary-color;
+  margin-bottom: 16px;
+  @include device(tablet) {
+
+  }
+  @include device(desktop) {
+
+  }
+}
+
+.list__text {
+  color: $tertiary-color;
+  font-family: $font-2;
+  line-height: 1.75;
+  @include device(tablet) {
+
+  }
+  @include device(desktop) {
+
+  }
+}
+
+.bottom {
+  background-color: $neutral-color-2;
+}
+
+// AUTHOR INFO (THIRD SECTION) CODE
+
+.founder__container {
+  margin-top: 65px;
+  margin-bottom: 74px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.founder__img {
+  max-width: 281px;
+  position: relative;
+  bottom: -53px;
+  z-index: -1;
+}
+
+.founder__content {
+  background-color: $primary-color;
+  text-align: center;
+  color: $neutral-color-1;
+  padding: 32px;
+}
+
+.founder__title {
+  @include heading-typography(small);
+  margin-bottom: 16px;
+}
+
+.founder__text {
+  line-height: 1.75;
+  font-family: $font-2;
+  max-width: 281px;
+  margin-bottom: 24px;
+}
+
+.founder__cta {
+  display: inline-block;
+  color: #24053E;
+  background-color: #44FFA1;
+  font-family: "Manrope", sans-serif;
+  line-height: 2;
+  font-weight: 600;
+  padding: 12px 24px;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 57px;
+}
+
+.footer__social {
+  display: flex;
+  gap: 28px;
 }
