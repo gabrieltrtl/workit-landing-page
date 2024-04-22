@@ -1,7 +1,6 @@
 // Typography
 @mixin heading-typography($size) {
   font-family: "Fraunces", serif;
-  font-weight: 600;
   font-size: 50px;
   @if $size == large {
     font-size: 80px;
